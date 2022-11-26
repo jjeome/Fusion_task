@@ -1,0 +1,22 @@
+* {
+  font-size: large;
+}
+
+#container{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.accodian {
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fst-anw {
+  background-color: #F6EFEF;
+  padding: 15px;
+}
