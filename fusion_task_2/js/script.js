@@ -1,5 +1,24 @@
-$(".accordian").click(function() {
-    $(this).next(".anw").stop().slidToggle(300);
-    $(this).toggleClass('on').siblings().removeClass('on');
-    $(this).next(".anw").siblings(".anw").slideUp(300);
-});
+$('dd').hide();
+$('dt').on('click', function () {
+    if ($(this).hasClass('on')) {
+        slideUp();
+        changeIMG2();
+    } else {
+        slideUp();
+        changeIMG();
+        $(this).addClass('on').next().slideDown();
+        changeIMG();
+    }
+    function slideUp() {
+        $('dt').removeClass('on').next().slideUp();
+        changeIMG();
+    };
+})
+
+function changeIMG(){
+    $("#fst-arrow").attr("src","/img/arrow-top.png");
+}
+
+function changeIMG2(){
+    $("#fst-arrow").attr("src","/img/arrow-bottom.png");
+}

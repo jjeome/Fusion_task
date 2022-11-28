@@ -1,22 +1,34 @@
-* {
-  font-size: large;
+@charset "UTF-8";
+@media print{
+  * {
+    font-size: medium;
+  }
 }
 
-#container{
-  width: 900px;
+*{
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+dl {
+  width: 50%;
   margin: 0 auto;
 }
 
-.accodian {
-  border-top: solid 1px grey;
-  border-bottom: solid 1px grey;
-  padding: 15px;
-  display: flex;
+dt {
+  padding: 2%;
+  cursor: pointer;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.fst-anw {
+dd {
+  padding: 2%; 
   background-color: #F6EFEF;
-  padding: 15px;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
 }
