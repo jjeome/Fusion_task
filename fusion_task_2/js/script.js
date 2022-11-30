@@ -12,15 +12,15 @@ $('dt').on('click', function () {
 });
 
 function slideUp() {
-    $('.arrow').attr("src","/img/arrow-bottom.png");
+    $('.arrow').children('.arr-img').attr("src","/img/arrow-bottom.png");
     $('dt').removeClass('on').next().slideUp();
 };
 
 function changeIMG(toggle){
     if($(toggle).hasClass('on')){
-        $(toggle).children('.arrow').attr("src","/img/arrow-top.png");
+        $(toggle).children('.arrow').children('.arr-img').attr("src","/img/arrow-top.png");
     } else{
-        $(toggle).children('.arrow').attr("src","/img/arrow-bottom.png");
+        $(toggle).children('.arrow').children('.arr-img').attr("src","/img/arrow-bottom.png");
     }
 };
 

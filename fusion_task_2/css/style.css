@@ -1,18 +1,13 @@
 @charset "UTF-8";
-@media print{
-  * {
-    font-size: medium;
-  }
-}
 
 *{
   margin: 0;
+  font-size: large;
 }
 
-html,
-body {
-  height: 100%;
-  margin-top: 2%;
+#container{
+  margin-top: 3%;
+  width: 100%;
 }
 
 dl {
@@ -23,23 +18,47 @@ dl {
 dt {
   padding: 2%;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   border-top: 1px solid #818181;
   border-bottom: 1px solid #818181;
   font-weight: bold;
-  border-collapse:collapse;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 dd {
   padding: 3% 5%; 
   background-color: #F6EFEF;
-  border-collapse:collapse;
+  border-collapse: collapse;
+}
+
+.img-wrap{
+  width: 100%;
+  display: inline-block;
+  align-items: flex-start;
+  margin-top: 1.5%;
 }
 
 .QnA{
+  display: inline-block;
+  vertical-align: middle;
   width: 4%;
   height: 4%;
+  margin-right: 1%;
+  margin-bottom: 0.5%;
+}
+
+dd .QnA{
+  margin-bottom: 2%;
+}
+
+.arrow {
+  width: 7%;
+  float: right;
+}
+
+.arrow .arr-img{
+  width: 100%;
 }
 
