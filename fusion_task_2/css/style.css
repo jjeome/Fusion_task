@@ -12,6 +12,7 @@
 html,
 body {
   height: 100%;
+  margin-top: 2%;
 }
 
 dl {
@@ -25,11 +26,20 @@ dt {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  font-weight: bold;
+  border-collapse:collapse;
 }
 
 dd {
-  padding: 2%; 
+  padding: 3% 5%; 
   background-color: #F6EFEF;
-  border-top: 1px solid #818181;
-  border-bottom: 1px solid #818181;
+  border-collapse:collapse;
 }
+
+.QnA{
+  width: 4%;
+  height: 4%;
+}
+

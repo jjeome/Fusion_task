@@ -1,4 +1,5 @@
 $('dd').hide();
+
 $('dt').on('click', function () {
     if ($(this).hasClass('on')) {
         slideUp();
@@ -8,18 +9,18 @@ $('dt').on('click', function () {
         $(this).addClass('on').next().slideDown();
         changeIMG(this);
     }
+});
 
-    function slideUp() {
-        $('dt').removeClass('on').next().slideUp();
-        changeIMG(this);
-    };
-})
+function slideUp() {
+    $('.arrow').attr("src","/img/arrow-bottom.png");
+    $('dt').removeClass('on').next().slideUp();
+};
 
 function changeIMG(toggle){
     if($(toggle).hasClass('on')){
-        $(".arrow").attr("src","/img/arrow-to.png");
+        $(toggle).children('.arrow').attr("src","/img/arrow-top.png");
     } else{
-        $(".arrow").attr("src","/img/arrow-bottom.png");
+        $(toggle).children('.arrow').attr("src","/img/arrow-bottom.png");
     }
-}
+};
 
