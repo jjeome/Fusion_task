@@ -2,23 +2,24 @@ $('dd').hide();
 $('dt').on('click', function () {
     if ($(this).hasClass('on')) {
         slideUp();
-        changeIMG2();
+        changeIMG(this);
     } else {
         slideUp();
-        changeIMG();
         $(this).addClass('on').next().slideDown();
-        changeIMG();
+        changeIMG(this);
     }
+
     function slideUp() {
         $('dt').removeClass('on').next().slideUp();
-        changeIMG();
+        changeIMG(this);
     };
 })
 
-function changeIMG(){
-    $("#fst-arrow").attr("src","/img/arrow-top.png");
+function changeIMG(toggle){
+    if($(toggle).hasClass('on')){
+        $(".arrow").attr("src","/img/arrow-to.png");
+    } else{
+        $(".arrow").attr("src","/img/arrow-bottom.png");
+    }
 }
 
-function changeIMG2(){
-    $("#fst-arrow").attr("src","/img/arrow-bottom.png");
-}
